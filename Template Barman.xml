@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>3.2</version>
-    <date>2017-07-24T09:41:20Z</date>
+    <version>3.0</version>
+    <date>2019-02-23T09:13:16Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -940,26 +940,19 @@
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>{Template AGENT Barman:barman.status[{#SERVER}].last()}&lt;&gt;1</expression>
-                            <recovery_mode>0</recovery_mode>
-                            <recovery_expression/>
                             <name>Barman status of {#SERVER} is not OK</name>
-                            <correlation_mode>0</correlation_mode>
-                            <correlation_tag/>
                             <url/>
                             <status>0</status>
                             <priority>3</priority>
                             <description/>
                             <type>0</type>
-                            <manual_close>1</manual_close>
                             <dependencies/>
-                            <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes/>
                     <host_prototypes/>
                 </discovery_rule>
             </discovery_rules>
-            <httptests/>
             <macros/>
             <templates/>
             <screens/>

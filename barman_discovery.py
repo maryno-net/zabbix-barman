@@ -3,7 +3,7 @@
 import subprocess
 import json
 
-barman_list = subprocess.Popen(['barman','list-server'],stdout=subprocess.PIPE)
+barman_list = subprocess.Popen(['/usr/bin/barman','list-server'],stdout=subprocess.PIPE)
 
 value = {'data':[] }
 
